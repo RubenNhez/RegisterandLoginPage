@@ -24,7 +24,7 @@ function Validation(values) {
         error.password = "Password should not be empty"
     }
     else if(!password_pattern.test(values.password)) {
-        error.password = "Password didn't match"
+        error.password = "Password must include 1 Capital Letter and 1 Number"
     } else {
         error.password = ""
     }
